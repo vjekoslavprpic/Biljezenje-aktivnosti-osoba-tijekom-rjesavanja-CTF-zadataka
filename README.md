@@ -65,8 +65,8 @@ Nakon izmjene konfiguracijske datoteke, ponovno pokrenite Elasticsearch:
 ```bash
 sudo systemctl restart elasticsearch
 ````
-Korak 3: Omogućavanje SSL-a na Kibani
-1. Konfiguriranje Kibane za korištenje SSL-a:
+
+### Konfiguriranje Kibane za korištenje SSL-a:
 U Kibana konfiguracijskoj datoteci (/etc/kibana/kibana.yml), omogućite SSL koristeći iste certifikate kao i za Elasticsearch:
 
 ```yaml
@@ -82,13 +82,14 @@ elasticsearch.username: "kibana_system"
 elasticsearch.password: "<kibana_lozinka>"
 ```
 
-### 2. Ponovno pokretanje Kibane:
+### Ponovno pokretanje Kibane:
 Nakon izmjene konfiguracije, ponovno pokrenite Kibanu:
 
 ```bash
 sudo systemctl restart kibana
 ```
-### Korak 4: Konfiguracija Filebeata sa SSL-om
+### Konfiguracija Filebeata sa SSL-om
+
 1. Izmjena Filebeat konfiguracije:
 U Filebeat konfiguracijskoj datoteci (/etc/filebeat/filebeat.yml), konfigurirajte SSL za komunikaciju s Elasticsearchom:
 
@@ -117,17 +118,17 @@ Provjerite radi li Elasticsearch s omogućenim SSL-om:
 curl -X GET https://localhost:9200 -u elastic:your_password --cacert /etc/elasticsearch/certs/ca.crt
 ```
 
-### 2. Provjera Kibane:
+### Provjera Kibane:
 Otvorite Kibanu u pregledniku putem https://<vaš-server-ip>:5601 i provjerite funkcionira li SSL.
 
-3. Provjera Filebeata:
+### Provjera Filebeata:
 Provjerite Filebeat logove kako biste osigurali da nema SSL povezanih grešaka:
 
 ```bash
 sudo tail -f /var/log/filebeat/filebeat.log
 ```
 
-Korak 6: Dodatne konfiguracije
+### Dodatne konfiguracije
 Kreiranje internih korisnika:
 Koristite Elasticsearch alat za upravljanje korisnicima kako biste kreirali korisnike i uloge za Filebeat i Kibanu:
 
