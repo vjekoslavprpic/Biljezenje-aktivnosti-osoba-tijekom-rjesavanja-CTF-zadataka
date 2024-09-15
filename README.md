@@ -2,6 +2,7 @@ Ovaj dio opisuje početno postavljanje elasticsearcha, kibane i filebeata koriš
 
 U direktoriju _Skripte_ se nalaze korištene skripte koje je potrebno postaviti u skrivene sistemske direktorije i osigurati izvršavanje.
 
+Elasticsearch i Kibana se postavljaju na zaseban server, dok se Filebeat postavlja na virtualni stroj Kali Linux.
 
 ### Instalacija Elasticsearch-a:
 ```bash
