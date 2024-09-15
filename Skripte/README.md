@@ -1,4 +1,4 @@
-### Korištene skripte
+### Skripte
 U ovom direktoriju su pohranjene skripte opisane u radu:
 
 * elastic_burp_plugin.py - sadrži Jython kod za Burp Suite plugin kojeg je potrebno importat.
