@@ -168,7 +168,6 @@ filebeat.inputs:
     - /var/log/*.log
     - /var/log/audit/audit.log
     - /home/kali/.command_log_zsh
-    - /home/kali/.command_output.log
 ```
 
 Kibana se dalje postavlja kroz pregled nadzorne ploče kako bi se pregledavali prikupljeni podaci.
