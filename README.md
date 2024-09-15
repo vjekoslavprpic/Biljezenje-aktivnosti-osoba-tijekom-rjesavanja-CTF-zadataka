@@ -17,7 +17,7 @@ sudo apt install kibana
 
 ### Instalacija Filebeata:
 ```bash
-sudo apt-get install filebeat
+sudo apt install filebeat
 ```
 
 ### Omogućavanje SSL-a na Elasticsearchu
