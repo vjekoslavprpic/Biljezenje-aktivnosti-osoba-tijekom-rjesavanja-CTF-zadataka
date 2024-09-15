@@ -1,6 +1,6 @@
 Ovaj dio opisuje početno postavljanje elasticsearcha, kibane i filebeata korištenjem httpsa.
 
-U direktoriju Skripte se nalaze korištene skripte koje je potrebno postaviti u skrivene sistemske direktorije i osigurati izvršavanje.
+U direktoriju _Skripte_ se nalaze korištene skripte koje je potrebno postaviti u skrivene sistemske direktorije i osigurati izvršavanje.
 
 
 ### Instalacija Elasticsearch-a:
