@@ -111,8 +111,8 @@ Nakon izmjene konfiguracije, ponovno pokrenite Filebeat:
 sudo systemctl restart filebeta
 ````
 
-Korak 5: Testiranje i Provjera
-1. Provjera Elasticsearcha:
+### Testiranje i Provjera
+### Provjera Elasticsearcha:
 Provjerite radi li Elasticsearch s omogućenim SSL-om:
 
 ```bash
